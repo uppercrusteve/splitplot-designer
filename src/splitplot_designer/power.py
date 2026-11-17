@@ -7,8 +7,9 @@ The data-generating process is the split-plot linear model
 with ``e_main`` drawn once per block x main cell and ``e_sub`` drawn per plot.
 The intraclass correlation ``icc`` is the share of total error variance that
 lives at the whole-plot level, so a larger ICC makes main-plot contrasts harder
-to detect. Tests use the correct error strata; the residual variance is never
-used as the denominator for a main effect.
+to detect. ``effect`` is Cohen's f against the total error SD of 1. Tests use
+the correct error strata; the residual variance is never used as the
+denominator for a main effect.
 """
 
 from __future__ import annotations

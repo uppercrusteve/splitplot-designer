@@ -29,6 +29,7 @@ def build_model_text(config: DesignConfig) -> str:
 主区 / main : {main} ({_codes(config, config.main_levels)})
 副区 / sub  : {sub} ({_codes(config, config.sub_levels)})
 统计单元 / experimental unit: 小区 plot_id（不是单株、也不是采样点）
+公式假设小区均值表含 `block` 与 `y` 列，处理列沿用下面的因子名。
 
 误差分层 / error strata  —— 裂区必须这样分
   主区误差 / whole-plot error : block:{main}（block × main），df = {block_df}
@@ -71,7 +72,7 @@ def build_model_summary(config: DesignConfig) -> dict[str, object]:
 
     return {
         "statistical_unit": "plot",
-        "whole_plot_error": f"{config.blocks}:{config.main_plot_name}",
+        "whole_plot_error": f"block:{config.main_plot_name}",
         "sub_plot_error": "residual",
         "main_df": len(config.main_levels) - 1,
         "block_main_df": (config.blocks - 1) * (len(config.main_levels) - 1),
@@ -81,17 +82,17 @@ def build_model_summary(config: DesignConfig) -> dict[str, object]:
             (config.blocks - 1) * (len(config.sub_levels) - 1)
         ),
         "statsmodels_formula": (
-            f"y ~ C({config.blocks}) + C({config.main_plot_name}) + "
-            f"C({config.blocks}):C({config.main_plot_name}) + C({config.sub_plot_name}) + "
+            f"y ~ C(block) + C({config.main_plot_name}) + "
+            f"C(block):C({config.main_plot_name}) + C({config.sub_plot_name}) + "
             f"C({config.main_plot_name}):C({config.sub_plot_name})"
         ),
         "r_formula": (
             f"y ~ {config.main_plot_name} * {config.sub_plot_name} + "
-            f"Error({config.blocks}/{config.main_plot_name})"
+            f"Error(block/{config.main_plot_name})"
         ),
         "r_lmer_formula": (
             f"y ~ {config.main_plot_name} * {config.sub_plot_name} + "
-            f"(1 | {config.blocks}) + (1 | {config.blocks}:{config.main_plot_name})"
+            f"(1 | block) + (1 | block:{config.main_plot_name})"
         ),
         "warnings": [
             "A completely randomized model for these data is wrong: main plots are "

@@ -81,7 +81,8 @@ def test_model_text_names_the_whole_plot_stratum(config) -> None:
     assert "block:main" in text
     assert "实验单元" in text or "experimental unit" in text
     assert "pseudo" in text.lower() or "伪重复" in text
-    assert "Error(4/floor)" in text
+    assert "Error(block/floor)" in text
+    assert "C(block):C(floor)" in text
     assert "df = 12" in text
     assert "df = 3" in text
 

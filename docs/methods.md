@@ -27,7 +27,7 @@ $$
 
 总误差方差 `σ² = σ²_w + σ²_p`。ICC 定义为 `ρ = σ²_w / σ²`，取值 `[0, 1)`。
 
-对应的 statsmodels 写法（`plot_means` 是已按小区聚合的数据）：
+对应的 statsmodels 写法（`plot_means` 是已按小区聚合的数据，含 `block` 与 `y` 列，处理列沿用因子名）：
 
 ```python
 full = ols(
