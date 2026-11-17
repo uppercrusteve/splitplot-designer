@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use splitplot-designer in research or a trial protocol, please cite this software."
+type: software
+title: "splitplot-designer: reproducible split-plot design, validation and power analysis"
+version: 0.1.0
+date-released: 2026-11-17
+license: MIT
+repository-code: "https://github.com/YilongXiao/splitplot-designer"
+url: "https://github.com/YilongXiao/splitplot-designer"
+authors:
+  - family-names: Xiao
+    given-names: Yilong
+    email: YilongXiao@users.noreply.github.com
+abstract: >-
+  A Python command line tool for randomized complete block split-plot field
+  trials. It validates treatment structure, geometry and replication, performs
+  seed-reproducible randomization with a SHA-256 allocation digest, renders
+  PNG/SVG field maps, emits correctly stratified statsmodels and R formulas,
+  drafts bilingual methods text, and simulates power with whole-plot and
+  residual error kept separate.
+keywords:
+  - split-plot
+  - experimental design
+  - randomization
+  - power analysis
+  - agronomy
+  - reproducibility
