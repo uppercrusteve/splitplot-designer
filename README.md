@@ -2,7 +2,7 @@
 
 可复现的裂区试验设计、校验与功效分析命令行工具：从 YAML 配置到随机分配、田间布局图、误差分层模型与模拟功效，一条命令链完成。
 
-[![CI](https://github.com/YilongXiao/splitplot-designer/actions/workflows/ci.yml/badge.svg)](https://github.com/YilongXiao/splitplot-designer/actions/workflows/ci.yml)
+[![CI](https://github.com/uppercrusteve/splitplot-designer/actions/workflows/ci.yml/badge.svg)](https://github.com/uppercrusteve/splitplot-designer/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB.svg)](https://www.python.org)
 
@@ -19,7 +19,7 @@
 需要 Python 3.10 或更新版本。Windows PowerShell：
 
 ```powershell
-git clone https://github.com/YilongXiao/splitplot-designer.git
+git clone https://github.com/uppercrusteve/splitplot-designer.git
 cd splitplot-designer
 py -3.12 -m venv .venv
 .\.venv\Scripts\Activate.ps1
@@ -32,7 +32,7 @@ pip install -e ".[dev]"
 macOS / Linux：
 
 ```bash
-git clone https://github.com/YilongXiao/splitplot-designer.git
+git clone https://github.com/uppercrusteve/splitplot-designer.git
 cd splitplot-designer
 python3 -m venv .venv
 source .venv/bin/activate
@@ -126,7 +126,7 @@ pytest -q
   year    = {2026},
   version = {0.1.0},
   license = {MIT},
-  url     = {https://github.com/YilongXiao/splitplot-designer}
+  url     = {https://github.com/uppercrusteve/splitplot-designer}
 }
 ```
 

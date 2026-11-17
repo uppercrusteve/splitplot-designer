@@ -5,12 +5,12 @@ title: "splitplot-designer: reproducible split-plot design, validation and power
 version: 0.1.0
 date-released: 2026-11-17
 license: MIT
-repository-code: "https://github.com/YilongXiao/splitplot-designer"
-url: "https://github.com/YilongXiao/splitplot-designer"
+repository-code: "https://github.com/uppercrusteve/splitplot-designer"
+url: "https://github.com/uppercrusteve/splitplot-designer"
 authors:
   - family-names: Xiao
     given-names: Yilong
-    email: YilongXiao@users.noreply.github.com
+    email: uppercrusteve@users.noreply.github.com
 abstract: >-
   A Python command line tool for randomized complete block split-plot field
   trials. It validates treatment structure, geometry and replication, performs
