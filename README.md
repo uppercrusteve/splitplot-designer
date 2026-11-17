@@ -121,7 +121,7 @@ pytest -q
 
 ```bibtex
 @software{xiao_splitplot_designer_2026,
-  author  = {Xiao, Yilong},
+  author  = {uppercrusteve},
   title   = {splitplot-designer: reproducible split-plot design and power analysis},
   year    = {2026},
   version = {0.1.0},
@@ -138,4 +138,4 @@ splitplot-designer is a small Python CLI for randomized complete block split-plo
 
 ## License
 
-[MIT](LICENSE) © 2026 Yilong Xiao
+[MIT](LICENSE) © 2026 uppercrusteve
