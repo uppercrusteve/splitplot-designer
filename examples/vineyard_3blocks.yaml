@@ -1,0 +1,28 @@
+# 合成演示数据 / synthetic demo — 18 小区、3 区组（非实测）
+# 最小合规设计示例：3 个区组 × 2 主区 × 3 副区
+experiment:
+  title: 香格里拉葡萄园灌溉方式与叶幕管理裂区试验（3 区组最小示例）
+  blocks: 3
+  main_plot:
+    name: irrigation
+    levels:
+      - {code: DI, label: 滴灌}
+      - {code: RF, label: 雨养}
+  sub_plot:
+    name: canopy_height
+    levels:
+      - {code: C, label: 常规叶幕}
+      - {code: H12, label: 叶幕 1.2 m}
+      - {code: H14, label: 叶幕 1.4 m}
+  layout:
+    plot_length_m: 15
+    plot_width_m: 6
+    rows_per_plot: 3
+    vines_per_row: 15
+    buffer_rows: 1
+    row_spacing_m: 2.0
+    vine_spacing_m: 1.0
+  sampling:
+    points_per_plot: 2
+    treated_as: replicates
+  seed: 20251118

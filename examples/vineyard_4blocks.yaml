@@ -1,0 +1,28 @@
+# 合成演示数据 / synthetic demo — 24 小区、4 区组（非实测）
+# 香格里拉葡萄园裂区试验：行间管理 × 叶幕高度
+experiment:
+  title: 香格里拉葡萄园行间生草与叶幕管理裂区试验
+  blocks: 4
+  main_plot:
+    name: floor_management
+    levels:
+      - {code: CK, label: 清耕}
+      - {code: NG, label: 自然生草}
+  sub_plot:
+    name: canopy_height
+    levels:
+      - {code: C, label: 常规叶幕}
+      - {code: H12, label: 叶幕 1.2 m}
+      - {code: H14, label: 叶幕 1.4 m}
+  layout:
+    plot_length_m: 20
+    plot_width_m: 8
+    rows_per_plot: 4
+    vines_per_row: 20
+    buffer_rows: 1
+    row_spacing_m: 2.0
+    vine_spacing_m: 1.0
+  sampling:
+    points_per_plot: 3
+    treated_as: plot_mean
+  seed: 20251117
