@@ -120,7 +120,7 @@ pytest -q
 若在论文或方案中使用本工具，请引用：
 
 ```bibtex
-@software{xiao_splitplot_designer_2026,
+@software{uppercrusteve_splitplot_designer_2026,
   author  = {uppercrusteve},
   title   = {splitplot-designer: reproducible split-plot design and power analysis},
   year    = {2026},

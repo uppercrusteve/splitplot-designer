@@ -226,7 +226,7 @@ TEMPLATE = """\
 # splitplot-designer 配置 / configuration
 # 合成演示（非实测数据） / synthetic demo (not observed data)
 experiment:
-  title: 香格里拉葡萄园行间生草与叶幕管理裂区试验
+  title: 高原葡萄园裂区试验示例（4 区组）
   # 完整区组数，必须 >= 3 (blocks, >= 3)
   blocks: 4
   main_plot:
