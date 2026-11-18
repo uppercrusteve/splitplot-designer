@@ -2,6 +2,17 @@
 
 格式遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，版本号遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)。
 
+## [Unreleased]
+
+### Fixed
+
+- The footer line no longer overlaps the x-axis label on short field maps.
+
+### Changed
+
+- Example titles are generic ("高原葡萄园裂区试验示例") rather than naming
+  the pilot trial.
+
 ## [0.1.0] - 2026-11-17
 
 首个可运行版本。

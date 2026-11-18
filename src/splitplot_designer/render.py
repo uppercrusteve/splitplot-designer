@@ -312,12 +312,14 @@ def render_field_map(
     }):
         fig = plt.figure(figsize=(14.0, height), facecolor="white")
         header = fig.add_axes([0.12, 0.77, 0.78, 0.19])
-        map_ax = fig.add_axes([0.155, 0.07, 0.72, 0.62])
+        # Leave room under the map for the x-axis label and the footer line;
+        # at the old 0.07 the two overlapped on short figures.
+        map_ax = fig.add_axes([0.155, 0.10, 0.72, 0.59])
         _draw_header(header, config, levels, colors, chosen_seed, total_rows)
         _draw_field(map_ax, config, assignments, total_rows, colors)
         fig.text(
             0.155,
-            0.018,
+            0.012,
             f"总尺寸 {field_length:g} m"
             f" × {total_rows * config.layout.row_spacing_m:g} m · "
             f"每小区 {config.layout.rows_per_plot} 行 × {config.layout.vines_per_row} 株 "
