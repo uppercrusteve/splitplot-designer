@@ -29,7 +29,7 @@ pip install -e ".[dev]"
 
 若 PowerShell 阻止激活脚本，可先执行 `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`。
 
-macOS / Linux：
+macOS / Linux:
 
 ```bash
 git clone https://github.com/uppercrusteve/splitplot-designer.git
